@@ -1,0 +1,103 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+/*nav*/
+ul{
+  width: 400px;
+  position: relative;
+  top: 95px;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+a{
+  color: white;
+}
+/*jumbo*/
+.jumbotron{
+  background-image: url('../img/jumbo2.jpg');
+height: 175px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+}
+
+
+.jumbotron .h1, .jumbotron h1{
+  color: white;
+  height: 100px;
+  position: relative;
+  top: 43px;
+}
+/*thumbnail*/
+.col-sm-2{
+  padding-top: 280px;
+}
+.thumbnail{
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height:280px;
+}
+.thumbnail>img{
+  height: 100px;
+  width: 100%;
+}
+
+.th-title{
+    font-weight: bold;
+}
+.th{
+  color: white;
+}
+.bk-img{
+  min-height: 600px;
+  background-image: url("../img/bk-img.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.container-fluid .bk-img{
+  height: 400px
+}
+.btn{
+  background-color: rgb(70, 78, 91);
+  border: 1px solid black;
+}
+
+/*about*/
+.about{
+  background-image: url("../img/abt-img.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.about-title{
+  color: black;
+  font-size: 75px;
+  padding-left: 10px;
+}
+.ab-text{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  font-size: 25px;
+
+}
+/*MQs*/
+@media only screen and (max-width: 768px){
+  .col-sm-2{
+    padding-top: 0px;
+  }
+  .about{
+    height: 475px;
+  }
+  .jumbotron .h1, .jumbotron h1{
+    position: relative;
+    top: 20px;
+  }
+}
