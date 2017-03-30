@@ -19,6 +19,7 @@ ul{
 }
 a{
   color: white;
+  font-size: 20px;
 }
 /*jumbo*/
 .jumbotron{
@@ -74,7 +75,7 @@ height: 175px;
   background-image: url("../img/abt-img.jpeg");
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 100%;
 }
 .about-title{
   color: white;
@@ -93,7 +94,13 @@ height: 175px;
   background-color:  #1f1f14;
   height: 300px;
 }
-
+.cons{
+  font-size: 35px;
+  color: white;
+}
+#links:focus{
+  border: 2px solid white;
+}
 /*links*/
 .links{
   height: 300px;
@@ -127,9 +134,22 @@ height: 175px;
     position: relative;
     top: 20px;
   }
+  .thumbnail{
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height:200px;
+    width: 250px;
+  }
   .thumbnail>img{
-    height: 100px;
-    width: 70%;
+    display: none;
+  }
+  .res-log{
+    display: none;
+  }
+  .pet-log{
+    display: none;
+  }
+  .linktgs{
+    padding-right: 100px;
   }
 }
 @media only screen and (max-width: 1235px){
@@ -145,4 +165,14 @@ height: 175px;
     background-position: center;
     height: 100%;
   }
+  .linktgs{
+    padding-right: 100px;
+  }
+  .res-log{
+    display: none;
+  }
+  .pet-log{
+    display: none;
+  }
+
 }

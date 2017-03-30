@@ -7,15 +7,16 @@
   <title>Diegos_Resume</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
   <!-- jumbo -->
   <div class="jumbotron">
     <ul class="nav nav-pills pull-right">
       <li role="presentation"class="nav-li"><a href="#about">About</a></li>
-      <li role="presentation" class="nav-li"><a href="#">Contact</a></li>
-      <li role="presentation"class="nav-li"><a href="#">links</a></li>
-      <li role="presentation"class="nav-li"><a href="#">References</a></li>
+      <li role="presentation" class="nav-li"><a href="#contact">Contact</a></li>
+      <li role="presentation"class="nav-li"><a href="#links" onclick="myFunction()">links</a></li>
     </ul>
     <div class="row name">
       <div class="col-sm-8 ">
@@ -27,12 +28,12 @@
   <!-- Menu-->
   <div class="container-fluid bk-img">
     <div class="row">
-      <div class="col-sm-2 col-sm-offset-2">
+      <div class="col-sm-2 col-sm-offset-3">
         <div class="thumbnail">
           <img src="img/ab-img.jpg" alt="me">
           <div class="caption">
             <h3 class="th-title oswald th">About</h3>
-            <p class="text-uppercase th">Click here to learn my amazing tale </p>
+            <p class=" th">Click here to learn my amazing tale </p>
             <p><a href="#about" class="btn btn-primary" role="button">Enter</a></p>
           </div>
         </div>
@@ -42,8 +43,8 @@
         <img src="img/con-img.jpg" alt="me">
         <div class="caption">
           <h3 class="th-title oswald th">Contact</h3>
-          <p class="text-uppercase th">Click here to summon me</p>
-          <p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+          <p class=" th">Click here to get in touch with me</p>
+          <p><a href="#contact" class="btn btn-primary" role="button">Enter</a></p>
         </div>
       </div>
     </div>
@@ -52,18 +53,8 @@
         <img src="img/lnk-img.jpeg" alt="me">
         <div class="caption">
           <h3 class="th-title oswald th">Links</h3>
-          <p class="text-uppercase th">find my work here, decide for yoursel</p>
-          <p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="thumbnail">
-        <img src="img/ref-img.jpeg" alt="me">
-        <div class="caption">
-          <h3 class="th-title oswald th">References</h3>
-          <p class="text-uppercase th">what people are saying about me</p>
-          <p><a href="#" class="btn btn-primary" role="button">Enter</a></p>
+          <p class=" th">Find my work here, decide for yoursel</p>
+          <p><a href="#links" class="btn btn-primary" role="button">Enter</a></p>
         </div>
       </div>
     </div>
@@ -74,22 +65,23 @@
 <div class="about container-fluid">
   <div class="row">
     <h1 class="oswald about-title">About Me</h1>
-    <div class="col-sm-7 col-sm-offset-3">
-      <p class="roboto ab-text" id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga, voluptas voluptate eaque, amet deserunt minima assumenda explicabo ab incidunt quod dolorem, molestias reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur maxime adipisci voluptates.</p>
+    <div class="col-sm-8 col-sm-offset-3">
+      <p class="roboto ab-text" id="about">Hello my friend! My name is Diego Joshua Lopez and if you are reading this I assume you want to know a bit about me. I was born and raised in a small rural town where no one really ever went beyond working laborous tiresome jobs, I would have ended in the same fate if a family member had not recommended  to me looking into a company that was training and prepairing the next wave of coders and creators in the valley.Since starting my journey at Bitwise industries i have learned the proper usage and workings of HTML5 and CSS along with its framework Bootstrap.I plan on continuing my journey at Bitwise and utilizing the skills I have gained thus far to push for a better brighter future.</p>
     </div>
   </div>
 </div>
 <!-- about end -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-6 contact">
+    <div class="col-sm-6 contact" id="contact">
       <div class="row">
         <h1 class="oswald about-title">Contact</h1>
-        <div class="col-sm-7 col-sm-offset-3">
-        </div>
+        <P class="roboto cons">Phone:559-709-2075</P>
+        <P class="roboto cons">Email:diegojoshualopez@gmail.com</P>
+        <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
       </div>
     </div>
-    <div class="col-sm-6 links"id="links">
+    <div class="col-sm-6 links" id="links">
       <div class="row">
         <h1 class="oswald about-title">Links</h1>
         <a href=""class="linktgs roboto">Pet Store<img src="img/petstore_logo.png" alt=""class="pet-log img-responsive pull-right"></a>
@@ -101,13 +93,11 @@
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!-- jq -->
-<script type="text/javascript">
-  $(resume.html).ready(function() {
-    $('#links').click(function() {
-      $("linktgs").next().animate({width: 'toggle'});
-    });
-  });
+  <!-- js -->
+  <script>
+    function myFunction() {
+        document.getElementById("contact").style.color = "2px solid white";
+    }
   </script>
 </body>
 </html>
