@@ -77,16 +77,43 @@ height: 175px;
   height: 300px;
 }
 .about-title{
-  color: black;
+  color: white;
   font-size: 75px;
   padding-left: 10px;
 }
 .ab-text{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 5px;
   font-size: 25px;
 
+}
+/*contact*/
+.contact{
+  background-color:  #1f1f14;
+  height: 300px;
+}
+
+/*links*/
+.links{
+  height: 300px;
+  background-color: #5c5c3d;
+}
+.linktgs{
+  background-color: #5c5c3d;
+  font-size: 50px;
+}
+.linktgs:hover{
+  text-decoration: none;
+  color: black;
+}
+.pet-log{
+  height: 100px;
+  width: 105px;
+}
+.res-log{
+  height: 100px;
+  width: 105px;
 }
 /*MQs*/
 @media only screen and (max-width: 768px){
@@ -99,5 +126,23 @@ height: 175px;
   .jumbotron .h1, .jumbotron h1{
     position: relative;
     top: 20px;
+  }
+  .thumbnail>img{
+    height: 100px;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1235px){
+  .jumbotron .h1, .jumbotron h1{
+    color: white;
+    height: 100px;
+    position: relative;
+    top: 1px;
+  }
+  .about{
+    background-image: url("../img/abt-img.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
   }
 }

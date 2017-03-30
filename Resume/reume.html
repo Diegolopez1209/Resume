@@ -80,9 +80,34 @@
   </div>
 </div>
 <!-- about end -->
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 contact">
+      <div class="row">
+        <h1 class="oswald about-title">Contact</h1>
+        <div class="col-sm-7 col-sm-offset-3">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 links"id="links">
+      <div class="row">
+        <h1 class="oswald about-title">Links</h1>
+        <a href=""class="linktgs roboto">Pet Store<img src="img/petstore_logo.png" alt=""class="pet-log img-responsive pull-right"></a>
+        <a href=""class="linktgs roboto pull-left">Restaurant<img src="img/logo-01.png" alt=""class="res-log img-responsive pull-right"></a>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <!-- jq -->
+<script type="text/javascript">
+  $(resume.html).ready(function() {
+    $('#links').click(function() {
+      $("linktgs").next().animate({width: 'toggle'});
+    });
+  });
+  </script>
 </body>
 </html>
