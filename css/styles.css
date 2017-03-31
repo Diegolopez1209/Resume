@@ -151,6 +151,10 @@ height: 175px;
   .linktgs{
     padding-right: 100px;
   }
+  .cons{
+    font-size: 25px;
+    color: white;
+  }
 }
 @media only screen and (max-width: 1235px){
   .jumbotron .h1, .jumbotron h1{
@@ -174,5 +178,8 @@ height: 175px;
   .pet-log{
     display: none;
   }
-
+  .cons{
+    font-size: 25px;
+    color: white;
+  }
 }
