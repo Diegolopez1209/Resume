@@ -101,6 +101,10 @@ height: 175px;
 #links:focus{
   border: 2px solid white;
 }
+.fa{
+  color: white;
+  padding-left: 25px;
+}
 /*links*/
 .links{
   height: 300px;
